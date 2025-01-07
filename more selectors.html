@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS Selectors</title>
+    <style>
+      /* .box:first-child{
+          background-color: red;
+          } */
+      /*
+     .box:first-line{
+      color: blueviolet;
+       }
+
+               */
+              .boxes *{
+                  color:blue ;   /* universal selector  */
+                 border: 2px solid black;
+              }
+
+
+              /* p, a, .box, [data-color="primary"]{     yaha pr grouping of selectors huyi ha
+                  margin-top: 45px;               well  this is attribute selector
+              padding-top: 45px;
+              } */
+
+
+              /* .box:nth-child(odd){    /* nth-child pseudo selector*/
+                  background-color: blue;
+                  color: white;
+          } */
+
+
+          /* .box:nth-last-child(1){
+              background-color: red;
+          } */
+
+          .boxes::before{          /*pseudo-elements*/
+              content:"Trapti is so good";
+              color: blue;
+          }
+
+          .boxes::after{                /*pseudo-elements*/
+              content:"Sigma course is also good";
+              color: red;
+          }
+
+      ::selection{
+          color: aqua;
+          background-color: black;
+      }
+
+      .box::first-letter{
+        color: purple;
+        font-size: 45px;
+      }
+
+      input::placeholder{
+        color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div data-color="primary" class="box">Lorem hey I am first box.</div>
+      <div class="box">Hello I am a box</div>
+      <div class="box">Hello I am a box</div>
+      <input type="text" placeholder="type your name here" />
+    </div>
+  </body>
+</html>

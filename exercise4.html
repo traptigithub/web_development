@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4: multicolor nav bar</title>
+    <style>
+      :root {
+         --color: rgb(239, 38, 199); 
+        --seccolor: rgb(245, 2, 42);
+        --textcolor: rgb(239, 114, 73); 
+
+        /* --nextcolor:red; */
+      }
+      *{
+        margin: 3px;
+        padding: 5px;
+      }
+      body {
+        background-color: black;
+        color: white;
+        
+      }
+      .out{
+          display: flex;
+      }
+
+      .navi {
+        border: 2px solid var(--color);
+        padding: 28px;
+        width: 55px;
+        
+        cursor: pointer;
+        font-weight: bold;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      .navi:hover {
+        background-color: var(--seccolor);
+        
+      }
+      
+
+      p {
+        color: var(--textcolor);
+        border: 2px solid var(--color);
+        padding:20px;
+        height: 50vh;
+        width: 40vw;
+        box-shadow: -3px 4px 10px 0px;
+       
+      }
+
+      
+    </style>
+  </head>
+  <body>
+
+    <input type="text" placeholder="Search for...">
+    <div class="out">
+      <nav class="navi">Home</nav>
+      <nav class="navi">About</nav>
+      <nav class="navi">Contact</nav>
+      <nav class="navi">Blogs</nav>
+      
+    </div>
+
+    <div>
+      
+        <h2>Bhupendra Jogi</h2>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam qui
+        quidem id eaque cum asperiores ex! Fuga similique ipsam, accusantium
+        dignissimos nemo quod consequuntur minima vero amet modi dolore expedita
+        reiciendis! Optio consequuntur non rem, provident ea perspiciatis
+        placeat quas laborum voluptatibus ab? Libero aliquid dolor, minima
+        similique pariatur suscipit beatae? Sint eos culpa quis sunt dolorem
+        possimus architecto et illo autem, iure debitis quae asperiores
+        reiciendis iste quam quas commodi maiores impedit. Placeat mollitia
+        maxime eos voluptatem consequuntur quos dicta quis, facilis quae, quas
+        nisi cupiditate, amet id cumque nihil laudantium soluta pariatur magnam
+        est qui. Laboriosam vitae libero hic! Eum reiciendis inventore
+        accusantium! Commodi fugit omnis voluptas at sit? Natus impedit repellat
+        quos facilis vitae soluta vero reprehenderit commodi, deserunt alias
+        voluptates, voluptatum dolorem nostrum, sapiente minima dicta. In,
+        repellat voluptatibus minus nobis incidunt ratione quaerat eum,
+        accusamus quibusdam aperiam sequi ut quos odit nesciunt voluptatem illo
+        laborum earum, ex aliquid. Sit facere consectetur dolores numquam, eius
+        ipsum quis reiciendis voluptate sint. Quibusdam veritatis alias dolore
+        odit! Esse sit ipsam distinctio incidunt vitae sed earum unde saepe
+        delectus minima cumque modi ut et suscipit quaerat non dicta dolorum,
+        velit fuga quae ullam voluptate exercitationem. Minus, repudiandae
+        blanditiis!
+      </p>
+    </div>
+  </body>
+</html>

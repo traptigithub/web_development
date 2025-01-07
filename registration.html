@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      
+      .regform{
+        width: 850px;
+        height: 650px;
+        border: 2px solid grey;
+        background-color: lightgrey;
+       }
+      
+    </style>
+</head>
+<body>
+  <div class="regform">
+
+    <div>      
+      <h2 class="heading">Registration Form</h2>
+      <h5>Complete the form below and submit press button!</h5>
+
+
+  <form action="/submit_registration" method="post" enctype="multipart/form-data">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="father_name">Father's Name:</label><br>
+    <input type="text" id="father_name" name="father_name" required><br><br>
+    
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+    
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"><br><br>
+  
+      </div>
+         
+          <div class="dis">
+
+           <label for="gender">Gender:</label><br>
+           <input type="radio" id="male" name="gender" value="male" required>
+           <label for="male">Male</label><br>
+           <input type="radio" id="female" name="gender" value="female" required>
+           <label for="female">Female</label><br><br>
+           
+           <label for="is_card">Enter ID Card:</label><br>
+           <input type="text" id="is_card" name="is_card" required><br><br>
+           
+           <label for="file">Upload File:</label><br>
+           <input type="file" id="file" name="file" accept="image/*"><br><br>
+           
+           <input type="submit" value="Submit">
+          </form>
+          
+        </div>
+        </div>
+  </body>
+</html>
+
+
+
+
+
+

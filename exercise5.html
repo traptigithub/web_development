@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design A Layout</title>
+    <style>
+      :root {
+        /* --headcolor: rgb(186, 5, 246); */
+        --headcolor: rgb(249, 77, 77);
+        --backcolor: rgb(5, 225, 5);
+        --bxone: rgb(235, 12, 139);
+        --bxtwo: rgb(14, 165, 215);
+      }
+      body{
+        background-color: var(--backcolor);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      header{
+        position: sticky;
+        top: 0px;
+      }
+
+      nav {
+        /* border: 2px solid black; */
+        background-color: var(--headcolor);
+        /* width: 100%; */
+        /* z-index: 1000; */
+        color: white;
+        padding: 12px;
+        margin: 0px;
+      }
+
+      nav li {
+        display: inline;
+        list-style: none;
+        padding: 25px;
+        font-weight: bolder;
+        font-family: "Poppins", sans-serif;
+      }
+
+      ::selection {
+        background-color: black;
+        color: aqua;
+      }
+      li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .container {
+        display: flex;
+      }
+
+      .box {
+        width: 50vw;
+        height: 250vh;
+        border: 2px solid blue;
+        margin: 25px;
+      }
+      .box1 {
+        background-color: var(--bxone);
+      }
+      .box2 {
+        background-color: var(--bxtwo);
+      }
+
+      footer {
+        background-color: grey;
+        color: black;
+        padding: 12px;
+        text-align: center;
+      }
+
+      p {
+        background-color: black;
+        color: white;
+        border: 2px solid orange;
+        border-radius: 15px;
+        padding: 35px;
+        text-align: center;
+        font-size: 55px;
+      }
+      img{
+        position: fixed;
+        bottom: 0px;
+        right: 30px;
+
+
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Blogs</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="box box1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam mollitia
+        quis iure architecto modi impedit fugit repellendus atque dolorem, porro
+        fugiat aut pariatur iste eligendi. Quis dolorum totam molestiae,
+        mollitia quis iure architecto modi impedit fugit repellendus atque
+        dolorem, porro fugiat aut pariatur iste eligendi. Quis dolorum totam
+        molestiae, temporibus perspiciatis doloremque commodi architecto rem.
+        Ducimus quam feserunt omnis unde? Quis quidem ut quasi, ex corrupti ad
+        ullam quibusdam quam tenetur rerum omnis reiciendis itaquptate! Quae,
+      </div>
+
+      <div class="box box2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam mollitia
+        quis iure architecto modi impedit fugit repellendus atque dolorem, porro
+        fumnis unde? Quis quidem ut quasi,xcepturi ducimus omnis animi.
+        Voluptatem libero provident eum dolor corrupti modi facere amet ad nobis
+        laborum, vitae reprehenderit necessitatibus nam saepe quod eveniet
+        perspiciatis, totam nesciunt dicta. Laboriosam mollitia sapiente
+        pariatur eum commodi quibusdam magni recusandae ipsum alias est, sit ex
+        reiciendis dolores tempore?
+      </div>
+    </div>
+    
+    <div>
+      <p>Welcome to the Sigma Web Development Express</p>
+    </div>
+
+    <!-- <svg height="100" width="100">
+      <circle
+        cx="30"
+        cy="30"
+        r="20"
+        stroke="black"
+        stroke-width="3"
+        fill="red"
+      />
+    </svg> -->
+
+    <img src="goku.png" alt="goku" width="62px" >
+    
+    <footer>foot</footer>
+  </body>
+</html>

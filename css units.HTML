@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units px,vw</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+         }
+         
+         /* html{
+            font-size: 16px;
+         }  */
+
+        .box{
+            border: 2px solid red;
+            /* width: 248px; */
+            width: 80vw;
+            height: 10vh;
+            background-color: aqua;
+            box-sizing: border-box;
+            margin:auto;
+        }
+
+            .container{
+                border: 2px solid black;
+            /* width: 248px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            background-color: aqua;
+            box-sizing: border-box;
+            margin: 23px auto;
+            font-size: 18px;
+            }
+            
+            .container > div{
+                border: 2px solid red;
+                font-size: 2em;
+                width: 50%;
+            }
+            .container > div >div{
+                border: 2px solid blue;
+                width: 20%;
+                text-overflow: clip;
+                overflow: hidden;
+
+            }
+
+            .mycont{
+             box-sizing: border-box;
+             border: 2px solid red;
+            color: black;
+            font-size: 22px;
+            /* width: 100vmin; */
+              width: 80vw;
+            /* overflow: hidden;
+               overflow: clip; */
+            margin: 23px auto;
+            }
+        
+        </style>
+</head>
+<body>
+    <div class="box">
+           I am a box 
+    </div>
+    
+    <div class="container">
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem excepturi est nesciunt officia vero enim autem voluptate. Optio iste alias unde voluptates. Rerum placeat et nobis aspernatur unde? Magnam temporibus ipsam aspernatur nesciunt assumenda eius at fugiat iste! Cumque repellendus quasi voluptatem nulla iste? Eveniet debitis quis magnam eaque praesentium ipsam quam cum sapiente voluptatibus tenetur.
+                 
+                <div>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat vero, nobis eos fugit dolores ad hic ut consequuntur dolorem accusamus expedita soluta voluptatibus?
+                </div>
+            </div>
+            <!-- expand this to see that this container will adjust its height lorem999   -->
+        </div>
+
+        <div class="mycont">
+            I am another container
+        </div>
+
+    </body>
+</html>

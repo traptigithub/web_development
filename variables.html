@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+
+       :root {   /*  ye Global Variable hai  */
+        --color: rgb(15, 239, 8);
+        --seccolor: rgb(228, 15, 228);
+        --defpad:44px;
+        --defop:0.2;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        background-color: var(--color);
+      }
+      ul {
+        display: flex;
+      }
+      ul li {
+        opacity: var(--defop);   /*thoda fade ho jaye gaa content*/
+        list-style: none;
+        padding: var(--defpad);
+        border: 12px solid var(--seccolor);
+      }
+      ul li:first-child {
+         --color: rgb(14, 219, 242);    /*ye local variable hai or kyuki yaha  pr isko humne over wright kar diya hai toh yahi value use hogi */
+        background-color: var(--color, lightblue);    /* if variable is not found then ek fallback variable hona chahiye - jo yaha pe lightblue hai */
+    }
+
+      .container {
+        background-color: var(--seccolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque
+      reiciendis et quos nisi suscipit dolore eos doloribus odio amet maiores a
+      provident expedita quia similique, porro recusandae vel est.
+    </div>
+  </body>
+</html>

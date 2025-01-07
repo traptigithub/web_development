@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Filters</title>
+    <style>
+      .img1 {
+        filter: brightness(122%) contrast(0.5);
+      }
+      .img2 {
+        /* filter: sepia(100%); */
+        filter: invert(1);
+        /* filter: invert(.31); */
+      }
+      .img3 {
+        /* filter: grayscale(70%); */
+        filter: opacity(0.31);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="img1"
+        src="https://gratisography.com/wp-content/uploads/2024/03/gratisography-funflower-800x525.jpg"
+        alt="photo"
+      />
+      <img
+        class="img2"
+        src="https://static.euronews.com/articles/stories/07/51/25/12/1200x675_cmsv2_ef1e318f-1250-59cd-a009-e831e7b26503-7512512.jpg"
+        alt="JC"
+      />
+      <img
+        class="img3"
+        src="https://staticg.sportskeeda.com/editor/2023/07/35206-16893440521036-1920.jpg?w=640"
+        alt="Luffy"
+      />
+    </div>
+  </body>
+</html>

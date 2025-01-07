@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            /* float: left; */
+            float: right;
+
+        }
+        .card:nth-child(3)
+        {
+            background-color: aqua;
+            /* clear: right; */
+            /* clear: left; */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cards">
+        <img src="Satoru Gojo.webp" width="230" alt="Image">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a molestias omnis laudantium nesciunt tenetur quasi, cupiditate sequi modi odit dolorem hic ex ut, similique distinctio. Quod veritatis excepturi expedita ea. Ipsam, consequuntur repellendus.</p>
+        </div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid laudantium accusamus tenetur sint officiis, quod est iure qui voluptates nam minus odio voluptatum ipsam sapiente reprehenderit culpa a, necessitatibus suscipit, dolorem facilis illum corporis porro. Ratione numquam ad repellat? Dolor odio iusto eligendi quidem, nam a nisi atque. Vero sit eum, nam ea molestias eveniet officia, fugit voluptas quibusdam ab enim vitae molestiae non odio itaque dignissimos ad porro cum a unde! Porro, expedita similique laboriosam nihil aperiam, aliquid consectetur repellendus distinctio velit illo ipsum, cum omnis eius beatae quia at amet adipisci sed dolore consequatur delectus praesentium qui? Neque officiis, iste mollitia atque quae consequatur ut! Temporibus dolorum impedit repudiandae, nobis velit, magnam illo omnis voluptates consectetur sed atque minima sapiente numquam eos ea officiis culpa doloribus nostrum voluptatem! Voluptates rem nobis obcaecati enim sunt, maiores voluptatem, sit et sint, autem ad? Ducimus eius id consequuntur vero eaque quidem voluptate dolores ullam magni esse, porro vitae, natus nostrum. Esse cum rerum optio adipisci voluptatibus sequi perspiciatis officiis enim sunt maxime nam delectus unde totam a, accusantium, ducimus odio quod! Provident debitis eveniet dignissimos corrupti quam blanditiis iure inventore totam itaque excepturi. Possimus alias animi iusto voluptatibus architecto similique fugit laudantium recusandae praesentium a accusantium itaque saepe eaque consequuntur, laboriosam tempora eius natus perspiciatis voluptatem temporibus, molestiae adipisci vero esse neque. Ipsam odio voluptatum sit quo quas adipisci illo nemo laudantium eveniet modi maiores itaque rem ab maxime amet, provident totam numquam labore non optio sapiente nostrum. Et nisi ad illum tempora, sed iure! Qui voluptatem blanditiis consequatur numquam, molestiae, eos nemo in quam, libero velit quasi cupiditate nesciunt incidunt? Et quisquam consectetur vitae tempora cupiditate dicta obcaecati sed cum repellendus explicabo, nam modi. Vitae tempora, quasi voluptatum ullam inventore doloribus nostrum, culpa dicta quibusdam reiciendis nemo, veniam eaque ad. Omnis neque unde quasi voluptatem. Sequi explicabo molestias totam, dolor adipisci beatae tenetur saepe, non quis amet veniam voluptatem hic. Libero, nobis! Obcaecati eaque nobis asperiores corporis, voluptates ducimus voluptatum molestiae quidem assumenda!</div>
+        <div class="card">card 3</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout-exercise 5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+      }
+      header {
+        position: sticky;
+        top: 0px;
+      }
+      nav {
+        background-color: pink;
+        height: 43px;
+      }
+      li {
+        list-style: none;
+        display: inline;
+        padding: 20px;
+        cursor: pointer;
+      }
+      li:hover {
+        text-decoration: underline;
+      }
+      .container {
+        background-color: green;
+        width: 95vw;
+        margin: 30px;
+      }
+      p {
+        border: 2px solid white;
+        color: white;
+        font-size: 40px;
+        border-radius: 30px;
+        height: 60px;
+        padding: 34px;
+        text-align: center;
+      }
+      .box {
+        height: 250vh;
+        width: 45vw;
+        border: 2px solid purple;
+        margin: 15px;
+      }
+      .box1 {
+        background-color: palevioletred;
+        display: inline-block;
+      }
+      .box2 {
+        background-color: blue;
+        display: inline-block;
+      }
+      .orange-circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        margin: 20px;
+        background: yellow;
+        position:fixed;
+        bottom: 0px;
+        right:25px;
+      }
+      footer {
+        background-color: grey;
+        height: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    <nav>  
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>CONTACTS</li>
+          <li>BLOGS</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+    </div>
+    <p>Welcome to Sigma web Development Express</p>
+
+    <div class="orange-circle"></div>
+    <footer>Foot</footer>
+  </body>
+</html>

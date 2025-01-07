@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+     <style>
+
+     /*Element Selectors*/
+       div{
+        background-color: red;
+       }
+
+        /*Class Selectors*/
+        .red{
+            background-color: red;
+        } 
+
+        /* Id Selectors */
+        #green{
+            background-color: green;
+        }
+        
+        /* Child Selector - isme tab laago hoga,jab direct child hoga tab */ 
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendent Selectors - isme kisi bhi tarah se laago ho jaye ga indirect child hoga tab bhi , bas descendent hona chahiye*/
+         div p{
+            color: blue;
+            background-color: brown;
+         }
+
+         /* Universal Selectors - saare elements pr lagoo hota hai  */
+         *{
+            margin: 0;
+            padding: 0;
+         }
+
+         /* Pseudo Selectors */
+           a:visited {
+            color:crimson;
+           }
+
+           a:link{   /*for the link that is not visited yet */
+            color: green;
+           }
+
+           a:active{ /* means when we are active on link*/
+           background-color: blue;
+           }
+
+            a:hover{
+            color: yellow
+           } 
+
+           p:first-child{
+           background-color: aqua;
+           }
+    </style>
+    
+</head>
+<body> 
+    <main class="one">
+        <p>I am First Child</p>
+        <p>I am second Child</p>
+    </main>
+    <div class="red">
+        I am a good girl
+        <p>Hey I am a para</p>
+    </div>
+    
+    <div id="green">I am another div</div>
+    <a href="https://www.google.com"> Google</a>
+    <a href="https://www.Facebook.com"> Facebook</a>
+    <a href="https://www.Aniwatch.com"> Aniwatch</a> <hr> <u>Anime website</u>
+</body>
+</html>

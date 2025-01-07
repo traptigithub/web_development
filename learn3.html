@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Make a multicolour Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --backColor: rgb(122, 26, 122);
+            --color: rgb(195, 95, 195);
+            --borderStyle: rgb(61, 7, 61);
+            --SecBackColor: rgb(114, 60, 5);
+            --SecColor: rgb(235, 190, 145);
+            --SecborderStyle: rgb(147, 79, 12);
+            --3BackColor: rgb(9, 107, 110);
+            --3Color:  rgb(88, 199, 203);
+            --3borderStyle:  rgb(46, 73, 74);
+        }
+
+        nav {
+            height: 7vh;
+            width: 100%;
+            background-color: var(--3BackColor);
+            color: var(--3Color);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        nav .logo a {
+            text-align: center;
+            text-decoration: none;
+            background-color: var(--3Color);
+            color: var(--3BackColor);
+            border: 2px solid var(--3borderStyle);
+            border-radius: 10px;
+            border-style: dotted;
+            padding: 5px 54px;
+        }
+        
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            list-style: none;
+            padding: 40px;
+            text-decoration-line:underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="name">Arif</a>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Feedback</li>
+        </ul>
+    </nav>
+</body>
+</html>
+</body>
+</html>

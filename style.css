@@ -1,0 +1,36 @@
+p{
+    /* background-color: aquamarine; */
+}
+a{
+    /* background-color: rgb(211, 179, 241); */
+}
+div{
+    /* background-color: ; */
+}
+span{
+    background-color: chocolate;
+}
+
+
+h1{
+    color: deeppink;
+}
+
+select{
+    border: 2px solid black;
+
+}
+
+    /* exercise of CSS */
+
+    p:first-child{
+    background-color: yellow;
+    color: red;
+    }
+
+    div{
+        background-color: blue;
+        color:white;
+    }
+
+    
