@@ -7,7 +7,7 @@ let a = 1;
 
 // for (let i = 0; i < 100; i++) {
 //   console.log(a + i);
-// }
+// } 
 
 // let obj = {  //object is created
 //     "name":"Trapti",
